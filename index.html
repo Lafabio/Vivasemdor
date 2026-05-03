@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de PEI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Plano Educacional Individualizado (PEI)</h1>
+    <p class="subtitle">Protótipo para cadastro, edição e exportação do PEI diário.</p>
+
+    <section class="card">
+      <h2>Dados Gerais</h2>
+      <div class="grid">
+        <label>Estudante <input id="estudante" value="Enzo Costa Souza - PCD" /></label>
+        <label>Data de Nascimento <input id="nascimento" type="date" value="2009-02-16" /></label>
+        <label>Unidade <input id="unidade" value="SESI/SC - Tubarão II" /></label>
+        <label>Turma <input id="turma" value="EM EMST 2024/1 M2" /></label>
+        <label>Diagnóstico clínico <input id="diagnostico" value="Outras Necessidades Especiais" /></label>
+        <label>Área do conhecimento <input id="area" value="385421 - 3º - Biohackeria II (Ciência)" /></label>
+        <label>Docente <input id="docente" value="Lafaiete Teixeira Pereira Erkmann" /></label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Seções de Acompanhamento</h2>
+      <label>Comunicação <textarea id="comunicacao"></textarea></label>
+      <label>Participação no contexto educacional <textarea id="participacao"></textarea></label>
+      <label>Aprendizagem escolar <textarea id="aprendizagem"></textarea></label>
+      <label>Autonomia <textarea id="autonomia"></textarea></label>
+      <label>Atividades de vida prática <textarea id="avp"></textarea></label>
+      <label>Comportamento <textarea id="comportamento"></textarea></label>
+      <label>Saúde <textarea id="saude"></textarea></label>
+      <label>Atendimentos especializados <textarea id="atendimentos"></textarea></label>
+      <label>Acompanhamento especializado na escola <textarea id="acompanhamento"></textarea></label>
+      <label>Observações importantes <textarea id="observacoes"></textarea></label>
+    </section>
+
+    <div class="actions">
+      <button id="salvar">Salvar localmente</button>
+      <button id="baixar">Baixar PEI Diário</button>
+      <span id="status"></span>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
